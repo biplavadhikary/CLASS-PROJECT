@@ -1,2 +1,2 @@
-# HTML_WT_PROJECT
+# HTML WT PROJECT
 Class Project
