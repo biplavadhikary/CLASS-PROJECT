@@ -2,10 +2,41 @@
 <html>
 <head>
 	<title> div tag </title>
+	<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+	<style>
+	body{
+
+			margin: 10%;
+			padding: 2%;
+			background: url(abstract.jpg) no-repeat center center fixed; 
+  	 	 	-webkit-background-size: cover;
+    		-moz-background-size: cover;
+    		-o-background-size: cover;
+    		background-size: cover;
+		}
+	.main{
+			margin: 4%;
+			padding: 5%;
+			background-image: linear-gradient(#08088A,#100719);
+			font-family: 'Philosopher', sans-serif;
+			font-size: 20px;
+			color: #2EFE2E;
+			background-blend-mode: darken;
+			border-top-right-radius: 20px;
+			border-bottom-left-radius: 20px;
+	}
+	.img{
+		border-color: 'black';
+	}
+	h1{
+
+	}	
+	</style>
 </head>
 <body>
-	<hr width="100%" size="10" color="black" >
-	<h1 align="center">DIV TAG</h1>
+	<div class="main">
+	<h1 align="center" style="font-family:'Bangers', cursive; font-size: 60px; color: #BDBDBD;" >DIV TAG</h1>
 	<hr width="100%" size="10" color="black" >
 	<hr noshade>
 	<ul  style="list-style-type: square">
@@ -56,9 +87,7 @@
 				By default, browsers always place a line break before and after the div element. However, this can be changed with CSS.
 			</h3>
 			<h2><u>Few more examples on div tag : </u></h2>
-			<center>
-				<img src="https://slideplayer.com/8664256/26/images/3/DIV+%3C%21DOCTYPE+html%3E+%3Chtml%3E+%3Cbody%3E.jpg" border="5" alt="Some Problem is there pls check in case any file is absent">
-			</center>
+				<img src="https://slideplayer.com/8664256/26/images/3/DIV+%3C%21DOCTYPE+html%3E+%3Chtml%3E+%3Cbody%3E.jpg" border="5" alt="Some Problem is there pls check in case any file is absent" style="float: center">
 
 		</li>
 		<li>
@@ -74,13 +103,10 @@
 			<h2>The rest of the attributes are not usually used, their job is taken by the CSS.
 			</h2>
 			<h3><u>Here is an example of using the div tag:</u></h3>
-			<ul>
-			<li><center>
+			<center>
 				<img src="http://peterkellner.net/wp/wp-content/uploads/2008/11/image_thumb.png" border="5" alt="Some Problem is there pls check in case any file is absent">
-			</center></li>	
-			
-		</ul>
-		</li>
+			</center>	
+			<ul type="square">
 		<li>
 			<h2> NOTES : </h2>
 				<h3>
@@ -96,7 +122,8 @@
 				<img src="https://www.skylinetechnologies.com/SkylineTechnologies/media/WebImages/blog/CommunityFoundation2.jpg" border="5" alt="Some Problem is there pls check in case any file is absent">
 			</center>
 		</li>
-		
-	</ul>	
+
+	</ul>
+	</div>	
 </body>
 </html>
