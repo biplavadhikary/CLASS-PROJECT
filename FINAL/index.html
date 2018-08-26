@@ -1,0 +1,125 @@
+<html>
+
+<head>
+    <title>Welcome to HTML</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="fonts/font.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            background-image: url("background.jpg");
+            background-color: lightgray;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .title {
+            border-radius: 25px;
+            position: relative;
+            background-color: rgba(154, 155, 160, 0.575);
+            margin-left: 35%;
+            margin-right: 35%;
+            top: 45%;
+            bottom: 50%;
+        }
+
+        .title p {
+            font-family: Freestyle;
+            color: white;
+            text-shadow: 2px 2px 4px rgb(0, 0, 0);
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .button {
+            position: absolute;
+            font-family: Gabriola;
+            font-size: 1.6vw;
+            font-weight: bold;
+            border-radius: 40px;
+            background-color: rgba(15, 59, 180, 0.726);
+            border: none;
+            color: white;
+            text-shadow: 1px 2px 3px rgb(0, 0, 0);
+            padding: 10px 30px;
+            top: 60vh;
+            left: 38vw;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .button:hover {
+            background-color: rgba(78, 131, 182, 0.747);
+        }
+
+        .button2 {
+            color: aliceblue;
+            border-radius: 0px;
+            border: 2px solid white;
+            padding: 7px 35px;
+            background-color: rgba(255, 255, 255, 0.418);
+            left: 52vw;
+        }
+
+        .button2:hover {
+            background-color: rgba(103, 102, 121, 0.459);
+        }
+
+        @media only screen and (max-width: 1080px) {
+            .button,
+            .button2 {
+                position: absolute;
+                font-family: Gabriola;
+                font-size: 4vw;
+                font-weight: bold;
+                border-radius: 40px;
+                background-color: rgba(15, 59, 180, 0.726);
+                border: none;
+                color: white;
+                text-shadow: 1px 2px 3px rgb(0, 0, 0);
+                padding: 10px 30px;
+                top: 64vh;
+                left: 35vw;
+                cursor: pointer;
+                overflow: hidden;
+            }
+
+            .button2 {
+                color: aliceblue;
+                border-radius: 0px;
+                border: 2px solid white;
+                padding: 7px 35px;
+                background-color: rgba(255, 255, 255, 0.418);
+                left: 36vw;
+                top: 72vh;
+            }
+        }
+    </style>
+
+    <script>
+        function OpenWin1() {
+            window.open("Main Page/Main.html", "_self");
+        }
+        function OpenWin2() {
+            window.open("About Us.html", "_self");
+        }
+    </script>
+</head>
+
+<body>
+    <div class="title">
+        <h1 style="color: White;">
+            <p>Welcome to HTML</p>
+        </h1>
+    </div>
+
+    <button class="button" onclick="OpenWin1()">GET STARTED</button>
+    <button class="button button2" onclick="OpenWin2()">About Us</button>
+
+</body>
+
+</html>
