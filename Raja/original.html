@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>HTML</title>
+	<style>
+		body {
+			margin: 5%;
+		}
+
+		.main {
+			margin: 8%;
+			font-style: Serif;
+			padding: 5%;
+			background-image: url(best.jpg);
+		}
+
+		.sub1 {
+			background: AQUA;
+		}
+	</style>
+
+
+
+
+
+</head>
+
+<body bgcolor="LIGHTSLATEGRAY">
+	<div class="main">
+		<font size=15px color=#4a0093>
+			<center>HTML5</center>
+		</font>
+
+		<h2>
+			<font color=#00b7b7>Overview</font>
+		</h2>
+
+		<ul type=disc>
+			<li>Hypertext Markup Language, a standardized system for tagging text files to achieve font, colour, graphic, and hyperlink
+				effects on World Wide Web pages(W3C).</li>
+			<br>
+			<li>Since the early days of the World Wide Web, there have been many versions of HTML:</li>
+			<br>
+
+			<li>In 1991 Tim Berners-Lee invented HTML</li>
+			<br>
+			<li>After 25 years,The W3C HTML5 Recommendation was released 28 October 2014. </li>
+			<br>
+			<li>The W3C HTML5.1 2nd Edition Recommendation was released 3 October 2017.</li>
+			<br>
+			<li>The W3C HTML5.2 Recommendation was released 14 December 2017.</li>
+		</ul>
+		<h3>
+			<font color=#808000>What is New in HTML5?</font>
+		</h3>
+
+		<p>
+			<b>The most interesting new HTML5 elements are:</b>
+		</p>
+		<ul type=disc>
+			<li>New
+				<b> semantic elements</b> like
+				<b>&ltheader&gt</b>,
+				<b>&ltfooter&gt</b>,
+				<b>&ltarticle&gt</b>, and
+				<b>&ltsection&gt</b>
+			</li>
+			<br>
+			<li>New
+				<b> graphic elements</: <b>&ltsvg&gt</b> and
+				<b>&ltcanvas&gt</b>
+			</li>
+			<br>
+			<li>New
+				<b>attributes of form elements</b> like number, date, time, calendar, and range.</li>
+			<br>
+			<li>New
+				<b>multimedia elements</b>:
+				<b>&ltaudio&gt</b> and
+				<b>&ltvideo&gt</b>
+			</li>
+			<br>
+			<li>HTML5 is supported in all modern browsers.</li>
+			<br>
+			<li>In addition, all browsers, old and new, automatically handle unrecognized elements as inline elements.</li>
+
+		</ul>
+		<h3>
+			<font color=#808000>New HTML5 API's (Application Programming Interfaces)</font>
+		</h3>
+		<p>
+			<b>The most interesting new API's in HTML5 are:</b>
+		</p>
+		<ul type=square>
+			<li>HTML Geolocation</li>
+			<li>HTML Drag and Drop</li>
+			<li>HTML Local Storage</li>
+			<li>HTML Application Cache</li>
+			<li>HTML Web Workers</li>
+			<li>HTML SSE</li>
+		</ul>
+
+
+
+		<h1 align=center>
+			<font color="blue">HTML Tags</font>
+		</h1>
+		<ul>
+
+			<li>HTML tags are the hidden keywords within a web page that define how our web browser must format and display the conten</li>
+			<li>Tags must have two parts:</li>
+			<br> 1. opening part.(
+			<b>&lthtml&gt</b>)
+			<br> 2. closing part.(
+			<b>&lt/html&gt</b>)
+		</ul>
+		<div class="sub1">
+			<h2 style="border:3px solid red;">
+				<font color=green>1.Marquee Tag:</font>
+			</h2>
+		</div>
+		<b> What is marquee tag?</b>
+		<ul type=disc>
+			<li>The marquee is a non-standard HTML tag which was used to create a scrolling text or an image.</li>
+			<br>
+			<li>It was used to make the text/image scroll horizontally across or vertically down the web page.</li>
+		</ul>
+		<h4>Example</h4>
+		<marquee bgcolor=#9EDE14>A scrolling text created with HTML Marquee element.</marquee>
+		<br>
+		<marquee behavior="scroll" direction="up">
+			<img src="images.jpg" width="200" height="200">
+		</marquee>
+		<br>
+		<div class=sub1>
+			<h2 style="border:3px solid red;">
+				<font color=green>2.Meta Tag:</font>
+			</h2>
+		</div>
+		<ul type=disc>
+			<li>The META elements can be used to include name/value pairs describing properties of the HTML document, such as author,
+				expiry date, a list of keywords, document author etc.</li>
+			<br>
+			<li>The
+				<b>&ltmeta&gt</b> tag is used to provide such additional information. This tag is an empty element and so does not have
+				a closing tag but it carries information within its attributes.</li>
+			<br>
+			<li>meta tags do not impact physical appearance of the document so from appearance point of view, it does not matter if we
+				include them or not.</li>
+		</ul>
+		<h4>
+			<font color=#4a0093>Adding Meta Tags to Our Documents</font>
+		</h4>
+		<ul type=disc>
+			<li>We can add metadata to Ourweb pages by placing
+				<b>&ltmeta&gt</b> tags inside the header of the document which is represented by
+				<b>&lthead&gt</b> and
+				<b>&lt/head&gt</b> tags.</li>
+			<br>
+			<li> A meta tag can have following attributes in addition to core attributes −</li>
+		</ul>
+		<br>
+		<br>
+		<table border=1 width=80%>
+			<tr bgcolor=# 24ff24>
+				<th>Sr.No</th>
+				<th>Attribute & Description</th>
+			</tr>
+			<tr bgcolor=NAVAJOWHITE>
+				<td>1</td>
+				<td>
+					<b>Name</b>
+					<br>Name for the property. Can be anything. Examples include, keywords, description, author, revised, generator etc. </td>
+			</tr>
+			<tr bgcolor=#b3b3b3>
+				<td>2</td>
+				<td>
+					<b>Content</b>
+					<br>Specifies the property's value. </td>
+			</tr>
+			<tr bgcolor=#9224ff>
+				<td>3</td>
+				<td>
+					<b>Scheme</b>
+					<br>Specifies a scheme to interpret the property's value (as declared in the content attribute). </td>
+			</tr>
+			<tr bgcolor=CRIMSON>
+				<td>4</td>
+				<td>
+					<b>http-equiv</b>
+					<br> Used for http response message headers. For example, http-equiv can be used to refresh the page or to set a cookie.
+					Values include content-type, expires, refresh and set-cookie. </td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<div class=sub1>
+			<h2 style="border:3px solid red;">
+				<font color=green>3.Anchor tag:</font>
+			</h2>
+		</div>
+
+		<b>What is Anchor tag?</b>
+		<ul type=disc>
+			<li>HTML links are defined with the
+				<b>&lta&gt</b> tag.</li>
+			<br>
+			<li> To create a hyperlink we use anchor tag and href attribute </li>
+		</ul>
+		<br>
+		<br>
+		<a href="https://www.google.co.in">
+			<img src="google.jpg" width=20 height=20>click here to open google</a>
+		<br>
+		<br>
+		<h3>
+			<font color=#db006e>Email Tag:-</font>
+		</h3>
+		<ul type=disc>
+			<li>
+				<b>&lta&gt</b>tag provides you option to specify an email address to send an email.</li>
+			<br>
+			<li> we will use mailto: email address along with href attribute.</li>
+		</ul>
+		<h4>Example</h4>
+		<a href="mailto:abc@gmail.com">Open Email</a>
+
+		<div class="sub1">
+			<h2 style="border:3px solid red;">
+				<font color=green>4.HTML Headings:</font>
+			</h2>
+		</div>
+		<ul type=disc>
+			<li>HTML headings are defined with the
+				<b>&lth1&gt</b> to
+				<b>&lth6&gt</b> tags</li>
+			<br>
+			<li>&lth1&gt defines the most important heading.
+				<b>&lth6&gt</b> defines the least important heading</li>
+			<br>
+		</ul>
+		<h4>Example:</h4>
+
+		<h1>This is heading 1</h1>
+		<h2>This is heading 2</h2>
+		<h3>This is heading 3</h3>
+		<h4>This is heading 4</h4>
+		<h5>This is heading 5</h5>
+		<h6>This is heading 6</h6>
+		<br>
+		<div class="sub1">
+			<h2 style="border:3px solid red;">
+				<font color=green>5.HTML Paragraphs:</font>
+			</h2>
+		</div>
+
+		<ul type="disc">
+			<li>HTML paragraphs are defined with the
+				<b>&ltp&gt</b> tag.</li>
+			<br>
+		</ul>
+		<h4>Example:</h4>
+		<p>This is paragraph</p>
+		<div class="sub1">
+			<h2 style="border:3px solid red;">
+				<font color=green>6.HTML Lists:</font>
+			</h2>
+		</div>
+
+
+		<h4>
+			<font color=#6600CC>Three types of list present in HTML</font>
+		</h4>
+		<br>
+		<ul type=disc>
+			<li>Lists are used to group together related pieces of information so they are clearly associated with each other and easy
+				to read.</li>
+			<br>
+			<li>lists are workhorse elements, frequently used for navigation as well as general content.</li>
+			<br>
+			<li>Lists are good from a structural point of view as they help create a well-structured</li>
+			<br>
+		</ul>
+
+		<ol type=i>
+			<li>
+				<b>Unordered list/bullet list </b>(
+				<b>&ltul&gt</b>):- used to group a set of related items in no particular order.</li>
+			<br>
+			<li>
+				<b>Ordered list/numbered list</b>(
+				<b>&ltol&gt</b>):- used to group a set of related items in a specific order.</li>
+			<br>
+			<li>
+				<b>description list:-</b>
+			</li>
+
+			<p>* used to display name/value pairs such as terms and definitions Each list type has a specific purpose and meaning in
+				a web page.</p>
+
+			<p>* Description lists use one set of
+				<b>&ltdl&gt&lt/dl&gt tags wrapped around one or more groups of
+					<b>&ltdt&gt&lt/dt&gt (name) and
+						<b>&ltdd&gt&lt/dd&gt (value) tags.</p>
+			<br>
+		</ol>
+		<h4>Example:</h4>
+		<P>
+			<font color=#6600CC>
+				<b>1.Unordered list:</b>
+			</font>
+		</P>
+
+		<h5>
+			<font color=#003399>Unordered list of type Squre</font>
+		</h5>
+
+		<ul style="list-style-type: square">
+			<li>Google</li>
+			<li>Microsoft</li>
+			<li>Amazon</li>
+		</ul>
+		<h5>
+			<font color=#003399>Unordered list of type Circle</font>
+		</h5>
+		<ul type=circle>
+			<li>Beetroot</li>
+			<li>Ginger</li>
+			<li>Potato</li>
+			<li>Radish</li>
+		</ul>
+		<h5>
+			<font color=#003399>Unordered list of type Disc</font>
+		</h5>
+		<ul type=disc>
+			<li>Beetroot</li>
+			<li>Ginger</li>
+			<li>Potato</li>
+			<li>Radish</li>
+		</ul>
+		<br>
+		<p>
+			<font color=#6600CC>
+				<b>2.Ordered List:</b>
+			</font>
+		</p>
+		<h5>
+			<font color=#003399>Ordered list of type a:</font>
+		</h5>
+		<ol type=a>
+			<li>3 idiot</li>
+			<li>Thor</li>
+			<li>Iron Man</li>
+			<li>Avengers</li>
+		</ol>
+		<h5>
+			<font color=#003399>Ordered list of type i</font>
+		</h5>
+		<ol type=i>
+			<li>Mango</li>
+			<li>Pineapple</li>
+			<li>lichi</li>
+			<li>Apple</li>
+		</ol>
+		<br>
+		<p>
+			<font color=#6600CC>
+				<b>3.Description List:</b>
+			</font>
+		</p>
+
+		<dl>
+			<dt>Name</dt>
+			<dd>Value</dd>
+			<dt>Name</dt>
+			<dd>Value</dd>
+			<dt>Name</dt>
+			<dd>Value</dd>
+		</dl>
+
+		<div class="sub1">
+			<h2 style="border:3px solid red;">
+				<font color=green>7.HTML Images:</font>
+			</h2>
+		</div>
+		<br>
+		<ul type=disc>
+			<li>HTML images are defined with the
+				<b>&ltimg&gt</b> tag.</li>
+			<br>
+			<li> The source file (
+				<b>src</b>), alternative text (
+				<b>alt</b>), width, and height are provided as attributes.</li>
+		</ul>
+		<br>
+		<h4>Example:</h4>
+		<img src="abc.jpg" width="300" height="200">
+		<br>
+		<div class="sub1">
+			<h2 style="border:3px solid red;">
+				<font color=green>8.HTML Buttons :</font>
+			</h2>
+		</div>
+		<ul type=disc>
+			<li>HTML buttons are defined with the
+				<b>&ltbutton&gt</b> tag</li>
+			<br>
+		</ul>
+		<h4>Example:</h4>
+		<button>click on button</button>
+		<br>
+		<br>
+		<br>
+		<h1 align=center>
+			<font color="blue">HTML Attributes</font>
+		</h1>
+		<div class="sub1">
+			<h2 style="border:3px solid red;">
+				<font color=green>1.Align Attributes:</font>
+			</h2>
+		</div>
+		<ul type=disc>
+			<li>align word is used to align atext or img in a specific position</li>
+			<br>
+			<li>It is a very special attribute in HTML</li>
+		</ul>
+		<h4>Example:</h4>
+
+		<p align="left">
+			<font color=red>This is left aligned </font>
+		</p>
+		<p align="center">
+			<font color=INDIGO>This is center aligned</font>
+		</p>
+		<p align="right">
+			<font color=MEDIUMBLUE>This is right aligned</font>
+		</p>
+		<br>
+		<div class="sub1">
+			<h2 style="border:3px solid red;">
+				<font color=green>2.Style Attributes:</font>
+			</h2>
+		</div>
+		<br>
+		<ul type=disc>
+			<li> The style attribute allows us to specify Cascading Style Sheet (CSS) rules within the element.</li>
+		</ul>
+		<br>
+		<h4>Example:</h4>
+		<p style="font-family:gabriola; color:#61032A;font-size: 5vw;">This is gabriola font style</p>
+		<br>
+		<div class="sub1">
+			<h2 style="border:3px solid red;">
+				<font color=green>3.Internationalization Attributes:</font>
+			</h2>
+		</div>
+
+		<b>There are three internationalization attributes available:</b>
+		<ul type=squre>
+			<li>dir</li>
+			<li>lang</li>
+			<li>xml:lang</li>
+		</ul>
+
+		<h3>
+			<font color=#6600CC>The dir Attribute:</font>
+		</h3>
+		<ul>
+			<li>dir attribute is used within the
+				<b>&lthtml&gt</b> tag, it determines how text will be presented within the entire document. When used within another tag,
+				it controls the text's direction for just the content of that tag.</li>
+			<br>
+			<li>The dir attribute allows us to indicate to the browser about the direction in which the text should flow.</li>
+			<br>
+			<li>The dir attribute can take one of two values:-</li>
+			<br>
+		</ul>
+		<ol type=a>
+			<li>
+				<b>ltr</b>:Left to right (the default value)</li>
+			<br>
+			<li>
+				<b>rtl</b>:Right to left (for languages such as Hebrew or Arabic that are read right to left)</li>
+		</ol>
+		<h4>Example:</h4>
+		<p dir="ltr">
+			<font color=#E51A08 style="font-size: 30px">This is right to left text(ltr)</font>
+		</p>
+		<p dir="rtl">
+			<font color=#2F06A2 style="font-size: 30px">
+				<b>بِسْمِ اللّهِ الرَّحْمـَنِ الرَّحِيمِ.</b> (rtl)</font>
+		</p>
+		<br>
+		<h3>
+			<font color=#6600CC> The lang atribute:</font>
+		</h3>
+		<ul type=disc>
+			<li>The lang attribute allows you to indicate the main language used in a document</li>
+			<br>
+			<li>this attribute was kept in HTML only for backwards compatibility with earlier versions of HTML</li>
+			<br>
+			<li>The values of the lang attribute are
+				<b>ISO-639</b> standard two-character language codes.</li>
+		</ul>
+		<h4>Example:</h4>
+		<p lang="en"> This page is using English Language</p>
+		<br>
+		<h3>
+			<font color=#6600CC> The xml:lang atribute:</font>
+		</h3>
+		<ul type=disc>
+			<li>The xml:lang attribute is the XHTML replacement for the lang attribute.</li>
+			<li>The value of the xml:lang attribute should be an ISO-639 country code</li>
+		</ul>
+		<br>
+		<h1 align=center>
+			<font color="blue">HTML Elements</font>
+		</h1>
+		<ul type=disc>
+			<li>An HTML element usually consists of a start tag and end tag, with the content inserted in between:</li>
+
+			<p>
+				<b>&lttagname&gt</b>Content...
+				<b>&lt/tagname&gt</b>
+				<br>
+				<li>If the element contains other content, it ends with a closing tag.</li>
+				<br>
+				<li>The element name is preceded by a forward slash.As shown in below table:</li>
+			</p>
+		</ul>
+		<br>
+		<table border=1 width=80%>
+			<tr bgcolor=#00FF66>
+				<th>Sart Tag</th>
+				<th>Content</th>
+				<th>End Tag</th>
+			</tr>
+			<tr bgcolor=#AB47BC>
+				<td>&ltp&gt</td>
+				<td>This is paragraph content.</td>
+				<td>&lt/p&gt</td>
+			</tr>
+			<tr bgcolor=#FF3333>
+				<td>&lth1&gt</td>
+				<td>This is heading content.</td>
+				<td>&lt/h1&gt</td>
+			</tr>
+			<tr bgcolor=#3498DB>
+				<td>&ltdiv&gt</td>
+				<td>This is division content.</td>
+				<td>&lt/div&gt</td>
+			</tr>
+		</table>
+
+		<br>
+		<h3>
+			<font color=#6600CC>Void Element</font>
+		</h3>
+		<br>
+		<ul>
+			<li> There are some HTML elements which don't need to be closed,those type of elements are called void elements.</li>
+
+		</ul>
+		<h4>Example:</h4>
+		<p>
+			<b>&ltimg&gt.../></b>,
+			<b>&lthr&gt /></b> and
+			<b> &ltbr&gt /></b>
+		</p>
+		</ul>
+	</div>
+	<br>
+</body>
+
+</html>
