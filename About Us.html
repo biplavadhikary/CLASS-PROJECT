@@ -9,35 +9,36 @@
         body {
             background: url(background2.jpg) no-repeat center center;
             background-size: cover;
-            margin-left: 15vw;
-            margin-right: 15vw;
-            margin-top: 3vw;
-            margin-bottom: 3vw;
         }
 
         .box {
             position: relative;
-            border-radius: 5px;
             font-family: Raleway;
+            background: url(img2.jpg);
+            margin: 0 auto;
             font-weight: bold;
             padding: 40px;
             font-size: 3vw;
-            background: inherit;
-            outline: 1vw solid white;
+            width: 70vw;
+            overflow: hidden;
             z-index: 1;
         }
-        
+
         .box::before {
             content: '';
             background: inherit;
+            background-position: center center;
+            background-attachment: fixed;
             position: absolute;
-            left: 0;
+            width: 120%;
+            height: 140%;
+            left: -5vw;
             right: 0;
-            top: 0;
+            top: -5vh;
             bottom: 0;
             box-shadow: inset 0 0 0 3000px rgba(255, 255, 255, 0.3);
             filter: blur(10px);
-            z-index: -1;
+            z-index:-1;
         }
 
 
@@ -150,13 +151,23 @@
 </head>
 
 <body>
-    <div class="box" style="color: rgb(3, 3, 90); text-align: center;display: block; text-decoration: underline; padding: 2vw;">
+    <div class="box" style="color: rgb(3, 3, 90); text-align: center; text-decoration: underline;">
         <button class="home" onclick="OpenWin()">
             <div class="fa fa-home"></div> Home
         </button>About Us
     </div><br>
     <div class="box" style="font-size: 10px;">
         <table>
+            <tr>
+                <td>
+                    <div class="b1">
+                        <div class="txt1 ">MK. GOURISARIA SIR</div>
+                        <div class="txt2" style="top:0;">This Project was made under his Excellent Guidance. For that, we express out hearfelt Gratitude.</div>
+                        <div></div>
+                    </div>
+                </td>
+                <td style="width:300px "><img src="dp/Sir.jpg "></td>
+            </tr>
             <tr>
                 <td style="width:300px"><img src="dp/Ayush.jpg"></td>
                 <td>
@@ -170,7 +181,8 @@
                 <td>
                     <div class="b1">
                         <div class="txt1">Bedabrata Bora (1706123)</div>
-                        <div class="txt2" style="top:0% ">Form (Structure, Layout, Styling), Styling on &lt;div&gt; , &lt;meta&gt; and &lt;a&gt;</div>
+                        <div class="txt2" style="top:0% ">Form (Structure, Layout, Styling), Styling on &lt;div&gt; , &lt;meta&gt;
+                            and &lt;a&gt;</div>
                     </div>
                 </td>
                 <td style="width:300px "><img src="dp/Beda.jpg "></td>
@@ -180,7 +192,8 @@
                 <td>
                     <div class="b2 ">
                         <div class="txt1 ">Biplav Adhikary (1706124)</div>
-                        <div class="txt2 ">Welcome Page & About Page (Complete) & Styling of Table,Basic Tags,Formatting, Overview,Image & Comments</div>
+                        <div class="txt2 ">Welcome Page & About Page (Complete) & Styling of Table,Basic Tags,Formatting,
+                            Overview,Image & Comments</div>
                     </div>
                 </td>
             </tr>
@@ -206,7 +219,8 @@
                 <td>
                     <div class="b1 ">
                         <div class="txt1 ">Chhaya (1706127)</div>
-                        <div class="txt2 " style="top:20% ">Structure and Content of Basic Tags, Overview, Formatting & Designing Main Page</div>
+                        <div class="txt2 " style="top:20% ">Structure and Content of Basic Tags, Overview, Formatting & Designing
+                            Main Page</div>
                     </div>
                 </td>
                 <td style="width:300px "><img src="dp/Chhaya.jpg "></td>
@@ -224,7 +238,8 @@
                 <td>
                     <div class="b1 ">
                         <div class="txt1 ">Gulam Muhammad (1706130)</div>
-                        <div class="txt2 " style="top:0%;">Structure and Content of About HTML5 & Attributes Page, Marquee and Meta tag</div>
+                        <div class="txt2 " style="top:0%;">Structure and Content of About HTML5 & Attributes Page, Marquee
+                            and Meta tag</div>
                     </div>
                 </td>
                 <td style="width:300px "><img src="dp/Gulam.jpg "></td>
@@ -243,7 +258,7 @@
                     <div class="b1 ">
                         <div class="txt1 ">Humam Altamash (1706132)</div>
                         <div class="txt2" style="top:0;">Structure & Content of &lt;meta&gt; Tag</div>
-                        <div ></div>
+                        <div></div>
                     </div>
                 </td>
                 <td style="width:300px "><img src="dp/Humam.jpg "></td>
