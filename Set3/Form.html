@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Metamorphous" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+	<title>Forms</title>
+	<link rel="Shortcut Icon" type="image"	href='../favicon.png'>
+	<style>
+		body{
+			background-color: #B3B6B7;  
+			margin: 5%;
+			padding: 2%;
+			background-image: linear-gradient(#707B7C,#CCD1D1);
+		}
+		.Main{
+			border-top-right-radius: 20px;
+			border-top-left-radius:  20px;
+			border-bottom-left-radius:  20px;
+			border-bottom-right-radius: 20px;
+			padding:100px;
+			background-color: #D6DBDF;
+			font-family: 'Lobster Two', cursive;
+			font-size: 15px;
+		}
+
+		.button input[type="button"]{
+			padding: 10px;
+			border-radius: 20px;
+			cursor: pointer;
+			transition: all 500ms;
+			position: relative;
+  			overflow: hidden;
+		}
+		
+		.button input[type="button"]:hover{
+			background: #58D68D;
+			color: #FBFCFC;
+		}
+		
+		.Heading{
+				font-family:'Metamorphous', cursive;
+		}
+		.SampleForm{
+			padding: 50px;
+			background-color: #EBF5FB;   
+			background-image: url("sample.jpg");
+    		background-repeat: no-repeat;
+    		background-position: center;
+    		background-blend-mode: darken;
+		}
+		.FormIntro {
+			font-size: 20px;
+			font-family: 'Zilla Slab', serif;
+		}
+	</style>
+</head>
+<body>
+	<div class="Main">
+<div class="Heading">
+	<h1 align="center"><u>Forms in HTML</u></h1></marquee>
+	<marquee onmouseover="this.stop();" onmouseout="this.start();">This page gives an overview of HTML form</marquee>
+	<hr>
+</div>
+<div class="SampleForm">
+	<form>
+		Name:
+		<input type="text" placeholder="Enter Your Name"><br><br>
+		Password:
+		<input type="password" placeholder="Enter Your Password"><br><br>
+		<input type="submit" value="SUBMIT">	
+	</form>
+</div>
+
+<hr>
+	<h1><b>What are HTML forms?</b></h1>
+	<div class="FormIntro">
+	<p>HTML Forms are one of the main points of interaction between a user and a web site or application. They allow users to send data to the web site. Most of the time that data is sent to the web server, but the web page can also intercept it to use it on its own.</p>
+	<p>An HTML Form is made of one or more widgets. Those widgets can be text fields (single line or multiline), select boxes, buttons, checkboxes, or radio buttons. Most of the time those widgets are paired with a label that describes their purpose — properly implemented labels are able to clearly instruct both sighted and blind users on what to enter into a form input.</p>
+	<p>The main difference between a HTML form and a regular HTML document is that most of the time, the data collected by the form is sent to a web server. In that case, you need to set up a web server to receive and process the data.</p> 
+</div>
+	<div class="button">
+	<form>
+	<input type="button" style="float: right" value="Next Page" onclick="window.location.href='HTML_Forms1.html'" />
+	</form>
+	</div>
+</div>
+</body>
+</html>

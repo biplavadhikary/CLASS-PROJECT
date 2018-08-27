@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Metamorphous" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+	<title>HTML Forms</title>
+	<link rel="Shortcut Icon" type="image"	href='../favicon.png'>
+	<style>
+		body{
+			margin: 10%;
+			margin-top: 5%;
+			padding: 2%;
+			background: #85929E;
+			background-image: linear-gradient(#5DADE2,#D6EAF8)
+		}
+		.mainArea{
+			border-top-right-radius: 20px;
+			border-top-left-radius:  20px;
+			border-bottom-left-radius:  20px;
+			border-bottom-right-radius: 20px;
+			padding:100px;
+			background-color: #D6DBDF;
+			font-size: 20px;
+			font-family: 'Zilla Slab', serif;
+		}
+		.Example{
+			padding: 10px;
+			margin: 2px;
+			background-color: #F2F4F4;
+		}
+		.Output{
+			padding: 10px;
+			margin: 2px;
+			background-color: #FDFEFE;
+		}
+		.button input[type="button"]{
+			padding: 10px;
+			border-radius: 20px;
+			cursor: pointer;
+			transition: all 500ms;
+		}
+		.button input[type="button"]:hover{
+			background: #58D68D;
+			color: #FBFCFC;
+		}
+		h2{
+			font-family:'Metamorphous', cursive;
+		}
+	</style>
+</head>
+<body>
+<div class="mainArea">	
+<h1 style="font-family: 'Metamorphous', cursive;">HTML Forms</h1>
+<hr>
+<h2>The &ltform&gt Element</h2>
+<p>The HTML <font color="red">&ltform&gt</font> element defines a form that is used to collect user input</p>
+<p>Form elements are different types of input elements, like text fields, checkboxes, radio buttons, submit buttons, and more.</p>
+<p>the HTML &ltform&gt tag has the following syntax</p>
+<div class="Example">
+	&ltform action ="Script URL" method="GET|POST"&gt<br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i>form elements</i><br>
+	&lt/form&gt     
+</div>
+<h2>Form Attributes</h2>
+<p>Apart from common attributes, following is a list of the most frequently used form attributes −</p>
+<table border="2px">
+	<tr bgcolor="#AAB7B8">
+		<th>Sl. No</th>
+		<th>Attributes & Description</th>	
+	</tr>
+	<tr>
+		<td>1.</td>
+		<td><b>action</b>
+			<p>Backend script ready to process your passed data.</p>
+		</td>	
+	</tr>	
+	<tr>
+		<td>2.</td>
+		<td><b>method</b>
+			<p>Method to be used to upload data. The most frequently used are GET and POST methods.</p>
+		</td>	
+	</tr>
+	<tr>
+		<td>3.</td>
+		<td><b>target</b>
+			<p>Specify the target window or frame where the result of the script will be displayed. It takes values like _blank, _self, _parent etc.</p>
+		</td>	
+	</tr>
+	<tr>
+		<td>4.</td>
+		<td><b>enctype</b>
+			<p>You can use the enctype attribute to specify how the browser encodes the data before it sends it to the server. Possible values are −</p>
+			<b>application/x-www-form-urlencoded</b>-This is the standard method most forms use in simple scenarios.<br><br>
+			<b>mutlipart/form-data</b>-This is used when you want to upload binary data in the form of files like image, word file etc.<br>
+		</td>	
+	</tr>
+	</table>
+	<br><br>
+	<h2>HTML Form Controls</h2>
+	<p>There are different types of form controls that you can use to collect data using HTML form −</p>
+	<ul type="disc">
+		<li>Text Input Controls</li>
+		<li>Checkboxes Controls</li>
+		<li>Radio Box Controls</li>
+		<li>Select Box Controls</li>
+		<li>File Select boxes</li>
+		<li>Hidden Controls</li>
+		<li>Clickable Buttons</li>
+		<li>Submit and Reset Button</li>
+	</ul>
+	<h2>Text Input Controls</h2>
+	There are three types of text input used on forms −
+	<ul type="square">
+		<li><b>Single-line text input controls</b>-This control is used for items that require only one line of user input, such as search boxes or names. They are created using HTML &ltinput&gt tag.</li>
+		<li><b>Password input controls</b>-This is also a single-line text input but it masks the character as soon as a user enters it. They are also created using HTMl &ltinput&gt tag.</li>
+		<li><b>Multi-line text input controls</b>-This is used when the user is required to give details that may be longer than a single sentence. Multi-line input controls are created using HTML &lt<b>textarea</b>&gt tag.</li>
+	</ul>
+	<h2>Single-line text input controls</h2>
+	<p>This control is used for items that require only one line of user input, such as search boxes or names. They are created using HTML &ltinput&gt tag.</p>
+	<h3>Example: </h3>
+	<div class="Example">
+	<p>
+		<font color="red">&lt!DOCTYPE html&gt</font><br>
+		&lthtml&gt<br>
+		&nbsp&nbsp&nbsp&nbsp&lthead&gt<br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttitle&gtText Input Control&lt/title&gt<br>
+		&nbsp&nbsp&nbsp&nbsp&lt/head&gt<br>
+		&nbsp&nbsp&nbsp&nbsp&ltbody&gt<br> 
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltform&gt<br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFirst name: &ltinput type="text" name="first_name"/&gt<br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltbr&gt<br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLast name:	&ltinput type="text" name="first_name"/&gt<br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt/form&gt<br>
+		&nbsp&nbsp&nbsp&nbsp&lt/body&gt<br>
+		&lthtml&gt<br>
+	</p>
+	</div>
+	<p>The output is as follows:</p>
+	<div class="Output">
+	<form >
+         First name: <input type = "text" name = "first_name" />
+         <br>
+         Last name: <input type = "text" name = "last_name" />
+     </form>
+     </div>	
+     <h2>Attributes</h2>
+     <p>Following is the list of attributes for &ltinput&gt tag for creating password field.</p>
+     <table border="2px">
+	<tr bgcolor="#AAB7B8">
+		<th>Sl. No</th>
+		<th>Attributes & Description</th>	
+	</tr>
+	<tr>
+		<td>1.</td>
+		<td><b>type</b>
+			<p>Indicates the type of input control and for password input control it will be set to <b>password<b>.</p>
+		</td>	
+	</tr>	
+	<tr>
+		<td>2.</td>
+		<td><b>name</b>
+			<p>Used to give a name to the control which is sent to the server to be recognized and get the value.</p>
+		</td>	
+	</tr>
+	<tr>
+		<td>3.</td>
+		<td><b>value</b>
+			<p>This can be used to provide an initial value inside the control.</p>
+		</td>	
+	</tr>
+	<tr>
+		<td>4.</td>
+		<td><b>size</b>
+			<p>Allows to specify the width of the text-input control in terms of characters.</p>
+		</td>	
+	</tr>
+	<tr>
+		<td>5.</td>
+		<td><b>maxlength</b>
+		<p>Allows to specify the maximum number of characters a user can enter into the text box.</p>
+		</td>
+	</tr>	
+	</table>
+	<h2>Multiple Line Text Input Control</h2>
+	<p>This is used when the user is required to give details that may be longer than a single sentence. Multi-line input controls are created using HTML &lttextarea&gt tag.</p>
+	<h3>Example:</h3>
+	<div class="Example">
+	<p>
+		<font color="red">&lt!DOCTYPE html&gt</font><br>
+		&lthtml&gt<br>
+		&nbsp&nbsp&nbsp&nbsp&lthead&gt<br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttitle&gtMultiple-Line Input Control&lt/title&gt<br>
+		&nbsp&nbsp&nbsp&nbsp&lt/head&gt<br>
+		&nbsp&nbsp&nbsp&nbsp&ltbody&gt<br> 
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltform&gt<br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspDescription:&lt/br&gt<br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttextarea rows = "5" cols = "50" name = "description"&gt<br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<tt>Enter description here...</tt><br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt/textarea&gt<br>
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt/form&gt<br>
+		&nbsp&nbsp&nbsp&nbsp&lt/body&gt<br>
+		&lthtml&gt<br>
+	</p>
+	</div>
+	<p>The output is as follows:</p>
+	<div class="Output">
+	<form >
+         Description : <br />
+         <textarea rows = "10" cols = "50" name = "description" >
+         	Enter description here...
+         </textarea>
+     </form>
+     </div>
+     <h2>Attributes</h2>
+     <p>Following is the list of attributes for &lttextarea&gt tag.</p>
+     <table border="2px">
+	<tr bgcolor="#AAB7B8">
+		<th>Sl. No</th>
+		<th>Attributes & Description</th>	
+	</tr>
+	<tr>
+		<td>1.</td>
+		<td><b>name</b>
+			<p>Used to give a name to the control which is sent to the server to be recognized and get the value.</p>
+		</td>	
+	</tr>	
+	<tr>
+		<td>2.</td>
+		<td><b>rows</b>
+			<p>Indicates the number of rows of text area box.</p>
+		</td>	
+	</tr>
+	<tr>
+		<td>3.</td>
+		<td><b>cols</b>
+			<p>Indicates the number of columns of text area box.</p>
+		</td>	
+	</tr>
+	</table>	
+	<br><br><br><br>
+	<div class="button">
+	<form>
+	<input type="button"  value="Previous Page" onclick="window.location.href='Form.html'" />
+	<input type="button" style="float: right" value="Next Page" onclick="window.location.href='HTML_Forms2.html'" />
+	</form>
+	</div>
+</div>
+</body>
+</html>
